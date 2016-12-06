@@ -1,0 +1,9 @@
+language: erlang
+otp_release:
+  - 19.1
+  - 19.0
+
+before_script:
+  - "erl -make"
+  - "chmod 777 ./test.sh"
+script: "./test.sh"
